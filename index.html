@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to UNIQLO</title>
+	
+	<!-- add icon link -->
+    <link rel = "icon" href = "https://logos-download.com/wp-content/uploads/2016/08/Uniqlo_logo.png" type = "image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	
+	<!-- Tags for Mobile Responsiveness -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Additional Internal CSS -->
+    <style>		
+		.features {
+			padding: 40px;
+		}
+		.hero {
+			color: #ffffff;
+			max-width: 0 auto;
+			margin: 0 auto;
+			padding: 4rem 1rem;
+			background-image: url("https://media.gettyimages.com/photos/womens-clothing-sits-on-display-inside-a-uniqlo-store-the-fashion-picture-id484752035");
+		}
+		
+		.card {
+			text-align: center;
+		}
+		
+		.col-lg-4 {
+			margin-bottom: 20px;
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="font-weight: bold; color: red">UNIQLO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="myFunction()">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="redirectToAbout()">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="redirectToProducts()">Products</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <header class="hero" style="background-size: cover;">
+			<div class="container text-center">
+				<h1 class="main_name">Scrounging for a new wardrobe? </h1>
+				<p class ="tagline" style="font-size: 20px;"><i>Every fashion need within a few taps</i></p>
+				<a class="btn btn-primary btn-lg" href="#" role="button">Order Now</a>
+			</div>
+		</header>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/453151/item/phgoods_66_453151.jpg?width=320">
+                            <div class="card-body">
+                                <h5 class="card-title">Casual</h5>
+                                <p class="card-text">For the comfort of your daily life</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/458450/item/phgoods_67_458450.jpg?width=320">
+                            <div class="card-body">
+                                <h5 class="card-title">Winter</h5>
+                                <p class="card-text">Protect yourself from the cold weather</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img src="https://image.uniqlo.com/UQ/ST3/ph/imagesgoods/457935/item/phgoods_60_457935.jpg?width=320">
+							<div class="card-body">
+                                <h5 class="card-title">Formal</h5>
+                                <p class="card-text">Look presentable in front of the crowd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        function myFunction() {
+			alert("You are already here");
+		}
+        function redirectToAbout() {
+            window.location.href = "about-us.html";
+        }
+        function redirectToProducts() {
+		    window.location.href = "products.html";
+        }			
+    </script>
+</body>
+</html>
